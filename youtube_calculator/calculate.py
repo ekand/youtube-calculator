@@ -1,11 +1,14 @@
+import os
 import re
 from datetime import timedelta
 from googleapiclient.discovery import build
 
-YOUTUBE_API = "youtube_api_key"
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def calculate_playlist_duration(playlist_id):
-    youtube = build("youtube", "v3", developerKey=YOUTUBE_API)
+    youtube = build("youtube", "v3", developerKey=os.getenv('YOUTUBE_API_KEY'))
 
     hours_pattern = re.compile(r'(\d+)H')
     minutes_pattern = re.compile(r'(\d+)M')
