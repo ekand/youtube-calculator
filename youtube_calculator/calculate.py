@@ -3,9 +3,9 @@ import re
 from datetime import timedelta
 from googleapiclient.discovery import build
 
-from dotenv import load_env, find_env
+from dotenv import load_dotenv
 
-load_env(find_env())
+load_dotenv()
 
 def calculate_playlist_duration(playlist_id):
     youtube = build("youtube", "v3", developerKey=os.getenv('YOUTUBE_API_KEY'))
