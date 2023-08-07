@@ -1,7 +1,14 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for, session
 from calculate import calculate_playlist_duration
 from googleapiclient.discovery import build
 import re
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+
 def format_duration(duration):
     days, remainder = divmod(duration, 86400)
     hours, remainder = divmod(remainder, 3600)
@@ -37,7 +44,7 @@ def extract_youtube_playlist_id(link):
         return "Invalid YouTube playlist link."
 
 app = Flask(__name__, template_folder="templates")
-app.secret_key = "hello"  # Replace with a secret key for session
+app.secret_key = os.getenv("FLASK_SECRET_KEY")  # Replace with a secret key for session
 
 @app.route('/', methods=['POST', 'GET'])
 def show_page():
