@@ -11,7 +11,7 @@ for root, dirs, files in os.walk('youtube_calculator/hugo_output/public'):
             css_file_names.append(file_name)
 
 for root, dirs, files in os.walk('youtube_calculator/hugo_output/public'):
-    print('hello 2998', root, dirs, files, 'hello 2998')
+    # print('hello 2998', root, dirs, files, 'hello 2998')
     for file_name in files:
         if file_name == '.DS_Store':
             continue
