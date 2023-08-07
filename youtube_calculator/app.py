@@ -55,7 +55,7 @@ def show_page():
         duration = extract_youtube_playlist_id(youtube_link)
         session['duration'] = duration  # Store the duration in the session
 
-    return render_template('calculator.html', duration=duration)
+    return render_template('calc2.html', duration=duration)
 
 if __name__ == '__main__':
     if os.getenv('DEV_MODE') == 'yes':
