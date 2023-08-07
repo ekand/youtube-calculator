@@ -60,10 +60,10 @@ def show_page():
     return render_template('index.html', duration=duration)
 
 
-@app.route('/about', methods=['GET'])
+@app.route('/about/', methods=['GET'])
 def show_about_page():
-    return render_template('/about/index.html')
+    return render_template('about/index.html')
 
 
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(debug=True, port=8080)

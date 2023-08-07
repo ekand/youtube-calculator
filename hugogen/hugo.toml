@@ -41,10 +41,16 @@ icon = "fa-brands fa-github"
 featured = false # true to be displayed in the home hero.
 
 [Menu]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
 [[menu.main]]
 name = "About"
 url = "/about/"
-weight = 1
+weight = 2
 
 
 [taxonomies]
