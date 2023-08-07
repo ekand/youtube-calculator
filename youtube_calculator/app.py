@@ -58,4 +58,4 @@ def show_page():
     return render_template('calculator.html', duration=duration)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=8080)
