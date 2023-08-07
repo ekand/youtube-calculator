@@ -24,9 +24,11 @@ for root, dirs, files in os.walk('youtube_calculator/hugo_output/public'):
         with open(file_path_out, 'w') as f_out:
             f_out.write(contents)
         if file_name.endswith('.css'):
-            with open('youtube_calculator/static/css' + file_name, 'w') as f_out:
+            with open('youtube_calculator/static/css/' + file_name, 'w') as f_out:
                 f_out.write(contents)
-
+        if file_name.endswith('.html'):
+            with open ('youtube_calculator/templates/' + file_name, 'w') as f_out:
+                f_out.write(contents)
 
 
 

@@ -57,12 +57,12 @@ def show_page():
         duration = extract_youtube_playlist_id(youtube_link)
         session['duration'] = duration  # Store the duration in the session
 
-    return render_template('hugo_output_processed/public/index.html', duration=duration)
+    return render_template('index.html', duration=duration)
 
 
 @app.route('/about', methods=['GET'])
 def show_about_page():
-    return render_template('hugo_output_processed/public/about/index.html')
+    return render_template('/about/index.html')
 
 
 if __name__ == '__main__':
