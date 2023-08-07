@@ -43,8 +43,10 @@ def extract_youtube_playlist_id(link):
     else:
         return "Invalid YouTube playlist link."
 
+
 app = Flask(__name__, template_folder="templates")
 app.secret_key = os.getenv("FLASK_SECRET_KEY")  # Replace with a secret key for session
+
 
 @app.route('/', methods=['POST', 'GET'])
 def show_page():
@@ -55,8 +57,13 @@ def show_page():
         duration = extract_youtube_playlist_id(youtube_link)
         session['duration'] = duration  # Store the duration in the session
 
-    return render_template('calc2.html', duration=duration)
+    return render_template('hugo_output_processed/public/index.html', duration=duration)
+
+
+@app.route('/about', methods=['GET'])
+def show_about_page():
+    return render_template('hugo_output_processed/public/about/index.html')
+
 
 if __name__ == '__main__':
-    if os.getenv('DEV_MODE') == 'yes':
-        app.run(port=8080)
+    app.run(port=8080)

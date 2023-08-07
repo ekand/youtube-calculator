@@ -6,7 +6,7 @@ theme = "salinger"
 
 author = "John Doe"
 #googleAnalytics = ""
-twemoji = true
+twemoji = false
 text404 = "Since the page you were looking for seems like doesn't exist, we <strong>strongly</strong> suggest you to better investigate the URL and/or go back to the <a href=\"/\">home</a>. </br></br> <iframe src=\"https://giphy.com/embed/aCKMaeduKfFXG\" width=\"480\" height=\"480\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe>"
 
 DateFormat = "Jan 2006"
@@ -38,23 +38,14 @@ copy = 'John Doe. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" c
 name = "github"
 url = "https://github.com/jacksalici/salinger-theme"
 icon = "fa-brands fa-github"
-featured = true # true to be displayed in the home hero.
+featured = false # true to be displayed in the home hero.
 
 [Menu]
 [[menu.main]]
-name = "Projects."
-url = "/projects/"
+name = "About"
+url = "/about/"
 weight = 1
 
-[[menu.main]]
-name = "Contact me."
-url = "mailto:mail@mail.com"
-weight = 2
-
-[[menu.footer]]
-name = "Privacy Policy"
-url = "/privacy"
-weight= 1 
 
 [taxonomies]
 category = "categories"
