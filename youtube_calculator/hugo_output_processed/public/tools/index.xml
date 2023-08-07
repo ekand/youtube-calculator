@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools on Salinger Theme</title>
-    <link>https://example.com/tools/</link>
-    <description>Recent content in Tools on Salinger Theme</description>
+    <title>YouTube Calculator on Salinger Theme</title>
+    <link>https://example.com/</link>
+    <description>Recent content in YouTube Calculator on Salinger Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/tools/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/about/</guid>
+      <description>This is a project by The Byte Bunch. This page is a work in progress. Source code is available on GitHub.</description>
+    </item>
+    
   </channel>
 </rss>

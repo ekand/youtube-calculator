@@ -1,6 +1,8 @@
 cd hugogen
 hugo
 cd ..
+
+cp -r hugogen/public/*
 rm -r youtube_calculator/hugo_output/public/*
 touch youtube_calculator/hugo_output/public/.exists
 rm -r youtube_calculator/hugo_output_processed/public/*

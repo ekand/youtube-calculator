@@ -56,7 +56,7 @@ def show_page():
         youtube_link = request.form.get("url")
         duration = extract_youtube_playlist_id(youtube_link)
         session['duration'] = duration  # Store the duration in the session
-
+        print(duration)
     return render_template('index.html', duration=duration)
 
 
