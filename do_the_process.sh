@@ -5,5 +5,5 @@ rm -r youtube_calculator/hugo_output/public/*
 touch youtube_calculator/hugo_output/public/.exists
 rm -r youtube_calculator/hugo_output_processed/public/*
 touch youtube_calculator/hugo_output_processed/public/.exists
-cp hugogen/public/* youtube_calculator/hugo_output/public/
-python process_hugo_output_for_django
+cp -r hugogen/public/* youtube_calculator/hugo_output/public/
+python process_hugo_output_for_django.py
