@@ -2,16 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/about/</loc>
+    <loc>http://127.0.0.1:8080/functions/</loc>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>http://127.0.0.1:8080/about/</loc>
   </url><url>
-    <loc>https://example.com/langs/</loc>
+    <loc>http://127.0.0.1:8080/categories/</loc>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>http://127.0.0.1:8080/langs/</loc>
   </url><url>
-    <loc>https://example.com/tools/</loc>
+    <loc>http://127.0.0.1:8080/tags/</loc>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>http://127.0.0.1:8080/tools/</loc>
+  </url><url>
+    <loc>http://127.0.0.1:8080/</loc>
+  </url><url>
+    <loc>http://127.0.0.1:8080/functions/playlist_duration/</loc>
   </url>
 </urlset>
