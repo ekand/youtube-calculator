@@ -1,0 +1,43 @@
+name: 'Build And Deploy YouTube Calculator'
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-hugo:
+    run-on: "ubuntu-latest"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: cd
+        run: cd hugogen
+      - name: "hugo mod npm pack"
+        run: hugo mod npm pack
+      - name: "npm install"
+        run: "npm install"
+      - name: hugo
+        run: hugo
+  process-hugo-output:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "prepare-directories"
+        run: |
+          rm -r youtube_calculator/hugo_output/public/*
+          touch youtube_calculator/hugo_output/public/.exists
+          rm -r youtube_calculator/hugo_output_processed/public/*
+          touch youtube_calculator/hugo_output_processed/public/.exists
+      - name: "cp hugo public"
+        run: cp -r hugogen/public/* youtube_calculator/hugo_output/public/
+      - name: "python process hugo output for django"
+        run: python process_hugo_output_for_django.py
+      - name: "test"
+        run: cat youtube_calculator/templates/index.html
+#  deploy-to-python-anywhere:
+#    runs-on: "ubuntu-latest"
+#    steps:
+#
+
+
+
