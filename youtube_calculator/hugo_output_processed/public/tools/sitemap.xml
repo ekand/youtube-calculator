@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://127.0.0.1:8080/functions/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/functions/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/about/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/about/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/categories/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/categories/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/langs/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/langs/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/tags/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/tags/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/tools/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/tools/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/</loc>
   </url><url>
-    <loc>http://127.0.0.1:8080/functions/playlist_duration/</loc>
+    <loc>https://youtubecalculator.pythonanywhere.com/functions/playlist_duration/</loc>
   </url>
 </urlset>
