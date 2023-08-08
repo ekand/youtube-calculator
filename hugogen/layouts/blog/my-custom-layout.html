@@ -1,0 +1,38 @@
+{{ define "main" }}
+  {{with .Params.hideTitle}}
+    <div class="py-12"></div>
+  {{else}}
+    {{ partial "hero.html" (dict "Title" .Title "Subtitle" .Params.Description "Context" .) }}
+  {{end}}
+
+  {{if .Params.toc}} {{partial "toc" .}} {{end}}
+
+  <article class="prose text-justify feed">{{- .Content -}}
+   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <main role="main" class="inner cover">
+            <div class="form-container">
+                <p class="lead">Use YouTube Playlist calculator to calculate playlist duration</p>
+                <form action="/" method="post">
+                    <input type="text" class="form-control" placeholder="Enter playlist URL here" name="url">
+                    <input type="submit" value="submit" class="btn btn-outline-secondary" />
+                </form>
+                {% if duration %}
+                <div class="alert alert-info mt-3" role="alert">
+                    Playlist Duration: {{ duration }}
+                </div>
+            {% endif %}
+            </div>
+        </main>
+    </div>
+
+  </article>
+
+{{ end }}
+
+
+
+
+
+
+
